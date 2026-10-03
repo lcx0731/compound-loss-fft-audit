@@ -1,0 +1,329 @@
+{
+  "data": "Analytically specified synthetic model; no observed or private data.",
+  "parameters": {
+    "frequency": "Poisson",
+    "rate": 8.0,
+    "severity": "Exponential",
+    "severity_mean": 100.0,
+    "aggregate_mean": 800.0,
+    "aggregate_variance": 160000.0,
+    "steps": [
+      40.0,
+      20.0,
+      10.0,
+      5.0,
+      2.5
+    ],
+    "retentions": [
+      1000.0,
+      1600.0,
+      2000.0
+    ],
+    "aliasing_step": 10.0,
+    "aliasing_rounding": "floor",
+    "aliasing_retention": 1000.0,
+    "aliasing_reference_exceedance": 0.24093283933632792,
+    "absolute_alias_budget": 1e-06
+  },
+  "continuous_reference": [
+    {
+      "retention": 1000.0,
+      "exceedance": 0.27711155614089844,
+      "stop_loss": 86.42259328455721,
+      "omitted_probability_bound": 8.000749528842777e-14,
+      "omitted_stop_loss_bound": 2.981259956464607e-10,
+      "maximum_count": 36
+    },
+    {
+      "retention": 1600.0,
+      "exceedance": 0.03901246017454431,
+      "stop_loss": 9.53590409861506,
+      "omitted_probability_bound": 8.000749528842777e-14,
+      "omitted_stop_loss_bound": 2.981259956464607e-10,
+      "maximum_count": 36
+    },
+    {
+      "retention": 2000.0,
+      "exceedance": 0.0076795963112159076,
+      "stop_loss": 1.6924572418351154,
+      "omitted_probability_bound": 8.000749528842777e-14,
+      "omitted_stop_loss_bound": 2.981259956464607e-10,
+      "maximum_count": 36
+    }
+  ],
+  "discretization": [
+    {
+      "retention": 1000.0,
+      "step": 40.0,
+      "floor": {
+        "exceedance": 0.15169687047524927,
+        "stop_loss": 42.91796731843286
+      },
+      "ceil": {
+        "exceedance": 0.4120035854810803,
+        "stop_loss": 162.71448229848778
+      },
+      "stop_loss_width": 119.79651498005492,
+      "stop_loss_width_bound": 320.0
+    },
+    {
+      "retention": 1000.0,
+      "step": 20.0,
+      "floor": {
+        "exceedance": 0.2079127870691635,
+        "stop_loss": 61.320285527642255
+      },
+      "ceil": {
+        "exceedance": 0.34150342469694295,
+        "stop_loss": 119.75713606054143
+      },
+      "stop_loss_width": 58.43685053289917,
+      "stop_loss_width_bound": 160.0
+    },
+    {
+      "retention": 1000.0,
+      "step": 10.0,
+      "floor": {
+        "exceedance": 0.24093283933632792,
+        "stop_loss": 72.93732982306332
+      },
+      "ceil": {
+        "exceedance": 0.30839749625050594,
+        "stop_loss": 101.96807731966874
+      },
+      "stop_loss_width": 29.030747496605414,
+      "stop_loss_width_bound": 80.0
+    },
+    {
+      "retention": 1000.0,
+      "step": 5.0,
+      "floor": {
+        "exceedance": 0.25863965211228357,
+        "stop_loss": 79.43431116348324
+      },
+      "ceil": {
+        "exceedance": 0.29251244939054644,
+        "stop_loss": 93.92606477954439
+      },
+      "stop_loss_width": 14.491753616061146,
+      "stop_loss_width_bound": 40.0
+    },
+    {
+      "retention": 1000.0,
+      "step": 2.5,
+      "floor": {
+        "exceedance": 0.2677819648981963,
+        "stop_loss": 82.86553652108239
+      },
+      "ceil": {
+        "exceedance": 0.2847499071042262,
+        "stop_loss": 90.10845576712308
+      },
+      "stop_loss_width": 7.242919246040685,
+      "stop_loss_width_bound": 20.0
+    },
+    {
+      "retention": 1600.0,
+      "step": 40.0,
+      "floor": {
+        "exceedance": 0.014395306300115096,
+        "stop_loss": 3.391904862799855
+      },
+      "ceil": {
+        "exceedance": 0.08385864065761195,
+        "stop_loss": 25.386409804410988
+      },
+      "stop_loss_width": 21.994504941611133,
+      "stop_loss_width_bound": 320.0
+    },
+    {
+      "retention": 1600.0,
+      "step": 20.0,
+      "floor": {
+        "exceedance": 0.023938015423563774,
+        "stop_loss": 5.711561843511632
+      },
+      "ceil": {
+        "exceedance": 0.05776283295505735,
+        "stop_loss": 15.705628901097498
+      },
+      "stop_loss_width": 9.994067057585866,
+      "stop_loss_width_bound": 160.0
+    },
+    {
+      "retention": 1600.0,
+      "step": 10.0,
+      "floor": {
+        "exceedance": 0.03064857902848528,
+        "stop_loss": 7.390220172310514
+      },
+      "ceil": {
+        "exceedance": 0.0475714391340305,
+        "stop_loss": 12.262765950512602
+      },
+      "stop_loss_width": 4.872545778202088,
+      "stop_loss_width_bound": 80.0
+    },
+    {
+      "retention": 1600.0,
+      "step": 5.0,
+      "floor": {
+        "exceedance": 0.03460545065540055,
+        "stop_loss": 8.398017602116369
+      },
+      "ceil": {
+        "exceedance": 0.04310087291124021,
+        "stop_loss": 10.818760704903752
+      },
+      "stop_loss_width": 2.420743102787384,
+      "stop_loss_width_bound": 40.0
+    },
+    {
+      "retention": 1600.0,
+      "step": 2.5,
+      "floor": {
+        "exceedance": 0.036750311877499664,
+        "stop_loss": 8.949799552835302
+      },
+      "ceil": {
+        "exceedance": 0.041010508191397954,
+        "stop_loss": 10.158230877207387
+      },
+      "stop_loss_width": 1.2084313243720857,
+      "stop_loss_width_bound": 20.0
+    },
+    {
+      "retention": 2000.0,
+      "step": 40.0,
+      "floor": {
+        "exceedance": 0.002239309824931479,
+        "stop_loss": 0.48860382502889443
+      },
+      "ceil": {
+        "exceedance": 0.02089504944187559,
+        "stop_loss": 5.647021202471237
+      },
+      "stop_loss_width": 5.158417377442342,
+      "stop_loss_width_bound": 320.0
+    },
+    {
+      "retention": 2000.0,
+      "step": 20.0,
+      "floor": {
+        "exceedance": 0.004175280596166453,
+        "stop_loss": 0.9109687962738473
+      },
+      "ceil": {
+        "exceedance": 0.012767046181926478,
+        "stop_loss": 3.1153659755546457
+      },
+      "stop_loss_width": 2.2043971792807984,
+      "stop_loss_width_bound": 160.0
+    },
+    {
+      "retention": 2000.0,
+      "step": 10.0,
+      "floor": {
+        "exceedance": 0.005674628084501254,
+        "stop_loss": 1.2426607123973028
+      },
+      "ceil": {
+        "exceedance": 0.00991712621860108,
+        "stop_loss": 2.2997458312833103
+      },
+      "stop_loss_width": 1.0570851188860075,
+      "stop_loss_width_bound": 80.0
+    },
+    {
+      "retention": 2000.0,
+      "step": 5.0,
+      "floor": {
+        "exceedance": 0.006605310082107629,
+        "stop_loss": 1.4505752886476397
+      },
+      "ceil": {
+        "exceedance": 0.008729872578211229,
+        "stop_loss": 1.9735337425095736
+      },
+      "stop_loss_width": 0.5229584538619338,
+      "stop_loss_width_bound": 40.0
+    },
+    {
+      "retention": 2000.0,
+      "step": 2.5,
+      "floor": {
+        "exceedance": 0.007123323429900852,
+        "stop_loss": 1.566959516645138
+      },
+      "ceil": {
+        "exceedance": 0.008188547335524432,
+        "stop_loss": 1.8277424573500696
+      },
+      "stop_loss_width": 0.2607829407049316,
+      "stop_loss_width_bound": 20.0
+    }
+  ],
+  "aliasing": [
+    {
+      "cells": 128,
+      "period": 1280.0,
+      "fft_total_mass": 1.0,
+      "fft_min_cell": 0.003590313457078867,
+      "fft_imaginary_residual": 9.115446210803359e-18,
+      "panjer_mass_outside_period": 0.10342069005325172,
+      "alias_l1_vs_unfolded_prefix": 0.10342069005325176,
+      "mass_identity_error": 4.163336342344337e-17,
+      "circular_exceedance": 0.13865531448425417,
+      "exceedance_understatement": 0.10227752485207375,
+      "within_alias_budget": false
+    },
+    {
+      "cells": 256,
+      "period": 2560.0,
+      "fft_total_mass": 1.0,
+      "fft_min_cell": 2.1377151275069452e-05,
+      "fft_imaginary_residual": 3.3589555226047076e-17,
+      "panjer_mass_outside_period": 0.00041719460878730796,
+      "alias_l1_vs_unfolded_prefix": 0.00041719460878740657,
+      "mass_identity_error": 9.860818758755663e-17,
+      "circular_exceedance": 0.24051748970293318,
+      "exceedance_understatement": 0.00041534963339473485,
+      "within_alias_budget": false
+    },
+    {
+      "cells": 512,
+      "period": 5120.0,
+      "fft_total_mass": 1.0,
+      "fft_min_cell": 1.0389895271784304e-11,
+      "fft_imaginary_residual": 1.3396803145637237e-16,
+      "panjer_mass_outside_period": 1.587754372422978e-10,
+      "alias_l1_vs_unfolded_prefix": 1.5879149095797653e-10,
+      "mass_identity_error": 1.6053715678714376e-14,
+      "circular_exceedance": 0.24093283917778485,
+      "exceedance_understatement": 1.5854306756324377e-10,
+      "within_alias_budget": true
+    },
+    {
+      "cells": 1024,
+      "period": 10240.0,
+      "fft_total_mass": 1.0,
+      "fft_min_cell": -6.102791358264149e-17,
+      "fft_imaginary_residual": 9.115688078727101e-17,
+      "panjer_mass_outside_period": 2.220446049250313e-16,
+      "alias_l1_vs_unfolded_prefix": 3.288336390334773e-14,
+      "mass_identity_error": 3.2661319298422697e-14,
+      "circular_exceedance": 0.24093283933633336,
+      "exceedance_understatement": -5.440092820663267e-15,
+      "within_alias_budget": true
+    }
+  ],
+  "validation": {
+    "continuous_risk_bracketed": true,
+    "stop_loss_width_within_rate_times_step": true,
+    "halving_step_nests_bounds": true,
+    "fft_mass_is_one_even_with_aliasing": true,
+    "alias_l1_equals_outside_mass": true,
+    "exceedance_error_bounded_by_outside_mass": true,
+    "small_period_fails_and_large_period_passes_alias_budget": true
+  }
+}
